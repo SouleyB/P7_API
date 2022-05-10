@@ -22,7 +22,26 @@ def decompress_pickle(file):
     data = pickle.load(data)
     return data
 
-client_list = pickle.load(open('customer_list.pickle', 'rb'))
+client_list = [283939,
+ 443250,
+ 360623,
+ 445333,
+ 326287,
+ 293921,
+ 172151,
+ 380768,
+ 174271,
+ 364077,
+ 396334,
+ 442686,
+ 331188,
+ 228526,
+ 310353,
+ 262571,
+ 166740,
+ 424750,
+ 156980,
+ 234697]
 model = pickle.load(open('model.pickle', 'rb'))
 df = decompress_pickle("test_df.pbz2")
 imputer = pickle.load(open('impute.pickle', 'rb'))
